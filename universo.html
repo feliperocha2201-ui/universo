@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Explorando el Universo</title>
+
+    <style>
+
+        /* DISEÑO GENERAL */
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #080b24;
+            color: white;
+        }
+
+        /* ENCABEZADO */
+
+        header {
+            background: linear-gradient(135deg, #11195c, #30105c);
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        header h1 {
+            font-size: 45px;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 20px;
+        }
+
+        /* MENÚ */
+
+        nav {
+            background-color: #050717;
+            padding: 18px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #6ec6ff;
+        }
+
+        /* SECCIONES */
+
+        section {
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        section h2 {
+            font-size: 32px;
+            color: #6ec6ff;
+        }
+
+        .texto {
+            max-width: 800px;
+            margin: auto;
+            line-height: 1.7;
+            font-size: 17px;
+        }
+
+        /* TARJETAS */
+
+        .contenedor {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 25px;
+            margin-top: 30px;
+        }
+
+        .tarjeta {
+            background-color: #151a46;
+            width: 260px;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px black;
+            transition: 0.3s;
+        }
+
+        .tarjeta:hover {
+            transform: translateY(-8px);
+        }
+
+        .tarjeta h3 {
+            color: #7bd4ff;
+            font-size: 23px;
+        }
+
+        .tarjeta p {
+            line-height: 1.5;
+        }
+
+        /* TABLA */
+
+        table {
+            margin: 30px auto;
+            border-collapse: collapse;
+            width: 90%;
+            max-width: 800px;
+            background-color: #151a46;
+        }
+
+        th, td {
+            border: 1px solid #6268a5;
+            padding: 15px;
+        }
+
+        th {
+            background-color: #252b6b;
+            color: #6ec6ff;
+        }
+
+        /* BOTÓN */
+
+        button {
+            background-color: #2878d4;
+            color: white;
+            border: none;
+            padding: 14px 25px;
+            border-radius: 10px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #185ca8;
+        }
+
+        #mensaje {
+            margin-top: 20px;
+            font-size: 18px;
+            color: #7bd4ff;
+        }
+
+        /* PIE DE PÁGINA */
+
+        footer {
+            background-color: #050717;
+            text-align: center;
+            padding: 30px;
+            margin-top: 30px;
+        }
+
+        /* ADAPTACIÓN PARA CELULAR */
+
+        @media (max-width: 600px) {
+
+            header h1 {
+                font-size: 32px;
+            }
+
+            nav a {
+                display: block;
+                margin: 10px;
+            }
+
+            .tarjeta {
+                width: 85%;
+            }
+
+            table {
+                font-size: 13px;
+            }
+        }
+
+    </style>
+</head>
+
+
+<body>
+
+    <!-- ENCABEZADO -->
+
+    <header>
+
+        <h1>🌌 Explorando el Universo</h1>
+
+        <p>
+            Descubre los misterios del espacio, los planetas y las estrellas
+        </p>
+
+    </header>
+
+
+    <!-- MENÚ -->
+
+    <nav>
+
+        <a href="#inicio">Inicio</a>
+
+        <a href="#planetas">Planetas</a>
+
+        <a href="#estrellas">Estrellas</a>
+
+        <a href="#sistema">Sistema Solar</a>
+
+        <a href="#curiosidades">Curiosidades</a>
+
+    </nav>
+
+
+    <!-- INICIO -->
+
+    <section id="inicio">
+
+        <h2>🌎 ¿Qué es el Universo?</h2>
+
+        <p class="texto">
+
+            El universo es todo aquello que existe: el espacio, el tiempo,
+            las galaxias, las estrellas, los planetas, la materia y la energía.
+            Es un lugar enorme que los científicos continúan estudiando para
+            comprender mejor cómo se formó y cómo funciona.
+
+        </p>
+
+        <p class="texto">
+
+            Nuestro planeta se encuentra dentro del Sistema Solar, que forma
+            parte de la galaxia conocida como la Vía Láctea.
+
+        </p>
+
+    </section>
+
+
+    <!-- PLANETAS -->
+
+    <section id="planetas">
+
+        <h2>🪐 Algunos Planetas</h2>
+
+        <div class="contenedor">
+
+
+            <div class="tarjeta">
+
+                <h3>🌍 Tierra</h3>
+
+                <p>
+                    Es nuestro planeta. Posee agua líquida y una atmósfera
+                    que permite las condiciones necesarias para la vida.
+                </p>
+
+            </div>
+
+
+            <div class="tarjeta">
+
+                <h3>🔴 Marte</h3>
+
+                <p>
+                    Es conocido como el planeta rojo debido a los minerales
+                    presentes en su superficie.
+                </p>
+
+            </div>
+
+
+            <div class="tarjeta">
+
+                <h3>🪐 Saturno</h3>
+
+                <p>
+                    Es uno de los planetas más reconocibles por su impresionante
+                    sistema de anillos.
+                </p>
+
+            </div>
+
+
+            <div class="tarjeta">
+
+                <h3>🔵 Neptuno</h3>
+
+                <p>
+                    Es uno de los planetas más alejados del Sol y presenta
+                    fuertes vientos en su atmósfera.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ESTRELLAS -->
+
+    <section id="estrellas">
+
+        <h2>⭐ Las Estrellas</h2>
+
+        <p class="texto">
+
+            Las estrellas son enormes cuerpos celestes compuestos principalmente
+            por gases. En su interior ocurren procesos que producen grandes
+            cantidades de energía y permiten que emitan luz y calor.
+
+        </p>
+
+    </section>
+
+
+    <!-- SISTEMA SOLAR -->
+
+    <section id="sistema">
+
+        <h2>☀️ Nuestro Sistema Solar</h2>
+
+        <p class="texto">
+
+            El Sistema Solar está formado por el Sol y todos los objetos que
+            orbitan alrededor de él. Entre estos objetos se encuentran los
+            planetas, satélites, asteroides y cometas.
+
+        </p>
+
+
+        <table>
+
+            <tr>
+
+                <th>Planeta</th>
+
+                <th>Posición</th>
+
+                <th>Característica</th>
+
+            </tr>
+
+
+            <tr>
+
+                <td>Mercurio</td>
+
+                <td>1</td>
+
+                <td>El planeta más cercano al Sol</td>
+
+            </tr>
+
+
+            <tr>
+
+                <td>Venus</td>
+
+                <td>2</td>
+
+                <td>Uno de los planetas más calientes</td>
+
+            </tr>
+
+
+            <tr>
+
+                <td>Tierra</td>
+
+                <td>3</td>
+
+                <td>El planeta donde vivimos</td>
+
+            </tr>
+
+
+            <tr>
+
+                <td>Marte</td>
+
+                <td>4</td>
+
+                <td>Conocido como el planeta rojo</td>
+
+            </tr>
+
+
+            <tr>
+
+                <td>Júpiter</td>
+
+                <td>5</td>
+
+                <td>El planeta más grande del Sistema Solar</td>
+
+            </tr>
+
+
+            <tr>
+
+                <td>Saturno</td>
+
+                <td>6</td>
+
+                <td>Destaca por sus anillos</td>
+
+            </tr>
+
+
+            <tr>
+
+                <td>Urano</td>
+
+                <td>7</td>
+
+                <td>Gira con una inclinación muy particular</td>
+
+            </tr>
+
+
+            <tr>
+
+                <td>Neptuno</td>
+
+                <td>8</td>
+
+                <td>Uno de los planetas más alejados del Sol</td>
+
+            </tr>
+
+        </table>
+
+    </section>
+
+
+    <!-- CURIOSIDADES -->
+
+    <section id="curiosidades">
+
+        <h2>🚀 Curiosidades del Universo</h2>
+
+        <div class="contenedor">
+
+
+            <div class="tarjeta">
+
+                <h3>🌌 Galaxias</h3>
+
+                <p>
+                    Las galaxias contienen enormes cantidades de estrellas,
+                    además de gas, polvo y otros objetos.
+                </p>
+
+            </div>
+
+
+            <div class="tarjeta">
+
+                <h3>🌙 La Luna</h3>
+
+                <p>
+                    La Luna es el satélite natural de la Tierra y tiene una
+                    gran influencia sobre las mareas.
+                </p>
+
+            </div>
+
+
+            <div class="tarjeta">
+
+                <h3>🚀 Exploración</h3>
+
+                <p>
+                    Los seres humanos han desarrollado naves y telescopios
+                    para estudiar diferentes regiones del espacio.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <br><br>
+
+        <button onclick="mostrarMensaje()">
+            🔭 Descubrir un dato
+        </button>
+
+
+        <p id="mensaje"></p>
+
+    </section>
+
+
+    <!-- PIE DE PÁGINA -->
+
+    <footer>
+
+        <h3>🌌 Explorando el Universo</h3>
+
+        <p>
+            Página web educativa creada con HTML, CSS y JavaScript.
+        </p>
+
+        <p>
+            © 2026 - Proyecto escolar
+        </p>
+
+    </footer>
+
+
+    <!-- JAVASCRIPT -->
+
+    <script>
+
+        function mostrarMensaje() {
+
+            document.getElementById("mensaje").innerHTML =
+            "✨ ¡El universo es mucho más grande de lo que podemos observar directamente!";
+
+        }
+
+    </script>
+
+
+</body>
+
+</html>
